@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Allocation Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resource Allocation Optimizer</h1>
+            <p>Find the contiguous subarray of tasks that maximizes resource usage without exceeding a constraint.</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <div class="input-group">
+                    <label for="resources-input">Resources Array (comma-separated)</label>
+                    <input type="text" id="resources-input" placeholder="e.g., 4, 2, 3, 1">
+                </div>
+                <div class="input-group">
+                    <label for="constraint-input">Resource Constraint</label>
+                    <input type="number" id="constraint-input" placeholder="e.g., 5">
+                </div>
+                <button id="calculate-btn">Calculate Maximum Utilization</button>
+            </div>
+
+            <div class="test-cases">
+                <h2>Test Cases</h2>
+                <div id="test-case-buttons">
+                    </div>
+            </div>
+
+            <div class="results">
+                <h2>Result</h2>
+                <div id="result-output">
+                    <p>Enter an array and a constraint, then click "Calculate".</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
